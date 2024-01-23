@@ -1,6 +1,3 @@
-intro_message = """Stack DS"""
-print(intro_message)
-
 array = []
 for i in range(5):
     take_input = input("Value: ")
