@@ -21,3 +21,4 @@ while True:
     else: print("Invalid Input. Please Enter 'y' or 'n'")
 
 print("Final Array: ",array)
+print("The time complexity of this algorith is: O(1) Constant TIme")
