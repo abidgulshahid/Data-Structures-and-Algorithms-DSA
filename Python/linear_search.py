@@ -4,7 +4,7 @@ LINEAR SEARCH IMPLEMENTATION
 
 
 '''
-def linear_search(array, value):
+def linear_search_on_ordered_list(array, value):
     counter = 0
     for arr in array:
         counter = counter + 1 
