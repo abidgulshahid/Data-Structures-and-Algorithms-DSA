@@ -1,20 +1,17 @@
-
 def binary_search(array, value): 
-    l = 0
-    h = len(array) - 1
-    while l <= h:
-        mid = l+ (h-l) / 2 # Mid index
-        midpoint = array[int(mid)] # mid value
-        print(mid, midpoint)
-        print(array[int(mid)] , value, 'array[int(mid)] == value')
-        if array[int(mid)] == value:
-            return mid
-        elif  array[int(mid)] > value: 
-            l = mid  + 1
-        elif  array[int(mid)] < value:  
-            h  = mid - 1 
-    return -1
+    start =  0
+    end = len(array) - 1 
+    while start <= end: 
+        midpoint = int((start + end) / 2) 
+        print(midpoint)
+        value_at_midpoint = array[midpoint]
+        if value < value_at_midpoint: 
+            end = midpoint - 1 
+        elif value > value_at_midpoint:
+            start = midpoint + 1
+        else: 
+            return value_at_midpoint
+    return "Not Found"
 
-
-array = [5,7, 9,13,32,33 ,42, 54, 56, 88]
-print(binary_search(array=array, value= 88))
+array  = [1,2,3,4,5,6,77,88]
+print(binary_search(array=array, value=77))
