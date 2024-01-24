@@ -4,15 +4,15 @@ def binary_search(array, value):
     while start <= end:
         midpoint = int((start + end) / 2)
 
-        print(midpoint)
+        print('midpoint', midpoint)
         value_at_midpoint = array[midpoint]
         print('value_at_midpoint', value_at_midpoint)
         if value < value_at_midpoint:
-            print("LESS THAN", value_at_midpoint)
+            print("LESS THAN", value_at_midpoint, end)
             end = midpoint - 1
             print("END", end)
         elif value > value_at_midpoint:
-            print("> MID", value_at_midpoint)
+            print("> MID", value_at_midpoint, start)
             start = midpoint + 1
             print("START", start)
         else:
