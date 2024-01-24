@@ -5,7 +5,7 @@ def binary_search(array, value):
     lower_bound = 0
     high_bound = len(array) - 1 
     print(high_bound)
-    while lower_bound <= high_bound: 
+    while high_bound <= lower_bound: 
         print(high_bound, lower_bound)
         midpoint = (lower_bound + high_bound) / 2
         midpoint = int(midpoint)
