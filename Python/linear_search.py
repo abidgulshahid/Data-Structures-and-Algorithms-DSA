@@ -16,4 +16,4 @@ def linear_search_on_ordered_list(array, value):
 
 
 array = [11,22,33,44,55,66,77,88]
-print(linear_search(array=array, value=77))
+print(linear_search_on_ordered_list(array=array, value=77))
