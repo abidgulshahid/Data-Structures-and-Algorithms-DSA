@@ -4,20 +4,19 @@ import (
 	"fmt"
 )
 
-func stack(array [5]int) {
-	fmt.Println("Stack here")
-	for i := 0; i <= len(array); i++ {
-		fmt.Print("Remove Value? (y/n):")
-		var input string
-		fmt.Scan(&input)
-		fmt.Print(input)
-
-		fmt.Scan(input)
+func stack(array []int, size int) {
+	for i := 0; i < size; i++ {
+		fmt.Printf("Enter %dth element: ", i)
+		fmt.Scanf("%d", &array[i])
 	}
+	fmt.Println(array)
 }
 
 func main() {
-	stack_array := [5]int{1, 2, 3, 4, 5}
-	stack(stack_array)
+	var size int
+	fmt.Printf("Enter the size of array: ")
+	fmt.Scanln(&size)
+	var stack_array = make([]int, size)
+	stack(stack_array, size)
 
 }
