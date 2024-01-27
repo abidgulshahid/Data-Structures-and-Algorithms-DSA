@@ -9,9 +9,17 @@ func stack(array []int, size int) {
 		fmt.Printf("Enter %dth element: ", i)
 		fmt.Scanf("%d", &array[i])
 	}
-	fmt.Println(array)
-}
+	fmt.Println("Your Current Array", array)
+	var remove_value string
+	fmt.Scanln(&remove_value)
+	fmt.Printf("Remove Value? (y/n):")
+	if remove_value == "y" {
+		var remove_last_value int
+		remove_last_value = len(array)
 
+	}
+
+}
 func main() {
 	var size int
 	fmt.Printf("Enter the size of array: ")
