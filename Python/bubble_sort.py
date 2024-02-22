@@ -7,10 +7,10 @@ def bubble_sort(list):
             if list[i] > list[i+1]:
                 sorted = False
                 list[i], list[i+1] = list[i+1], list[i]
+                print(list)          
         unsorted_until_index = unsorted_until_index - 1
 
 
 
-list = [65, 55, 45, 35, 25, 15, 10]
+list = [25,23,21,15,10,5]
 bubble_sort(list=list)
-print(list)
